@@ -8,13 +8,30 @@
 <script>
 
 function calculoIcms(){
-    var preco = parseInt(prompt("Inserir preço da mercadoria"))
-    var icms = prompt("Inserir valor do ICMS (Deve ser acrescentado no formato de decimal, colocando o ponto no lugar da vírgula, ex.: se for 12%, deve ser inserido 0.12)")  
+    var preco = parseInt(prompt("Insira o preço da mercadoria"))
+    var icms = prompt("Insira o valor do ICMS (Deve ser acrescentado no formato de decimal, colocando o ponto no lugar da vírgula, ex.: se for 12%, deve ser inserido 0.12)")  
     var resultado = (preco + preco*icms)
-    alert("O preço final da mercadoria é: " + resultado)
+    alert("O preço final da mercadoria é: " + "R$" + resultado)
 }
 
 calculoIcms()
+
+function multiplus(numero1, numero2){
+    var numero1 = parseInt(prompt("Insira um número"))
+    var numero2 = parseInt(prompt("Insira um segundo número"))
+
+    var resultadoMultiplus = (numero1 / numero2)
+
+    if (Number.isInteger(resultadoMultiplus)){
+    alert("O primeiro número é múltiplo do segundo número")}
+
+    else{
+    alert ("O primeiro número NÃO é múltiplo do segundo número")
+    }
+    
+}
+
+ multiplus()
 
 </script>
 
