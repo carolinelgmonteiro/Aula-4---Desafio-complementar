@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 04 - Desafio</title>
 
 <script>
 
-function calculoIcms(resultado){
-    var preco = prompt("Inserir preço da mercadoria")
-    var icms = prompt("Inserir valor do ICMS (Deve ser acrescentado no formato de decimal, ex.: 0,12")
-    
-    var resultado = ((preco * icms)+ preco)
+function calculoIcms(){
+    var preco = parseInt(prompt("Inserir preço da mercadoria"))
+    var icms = prompt("Inserir valor do ICMS (Deve ser acrescentado no formato de decimal, colocando o ponto no lugar da vírgula, ex.: se for 12%, deve ser inserido 0.12)")  
+    var resultado = (preco + preco*icms)
+    alert("O preço final da mercadoria é: " + resultado)
 }
 
-alert = ("O preço final da mercadoria é: " + calculoIcms)
-
-
+calculoIcms()
 
 </script>
 
