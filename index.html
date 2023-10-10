@@ -9,8 +9,8 @@
 
 function calculoIcms(){
     var preco = parseInt(prompt("Insira o preço da mercadoria"))
-    var icms = prompt("Insira o valor do ICMS (Deve ser acrescentado no formato de decimal, colocando o ponto no lugar da vírgula, ex.: se for 12%, deve ser inserido 0.12)")  
-    var resultado = (preco + preco*icms)
+    var icms = parseInt("Insira o valor do ICMS")  
+    var resultado = (preco + preco*(icms/100))
     alert("O preço final da mercadoria é: " + "R$" + resultado)
 }
 
